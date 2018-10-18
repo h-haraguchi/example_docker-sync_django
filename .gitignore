@@ -1,0 +1,8 @@
+# Jetbrains
+.idea
+
+# docker-sync
+.docker-sync
+
+# sqlite
+*.sqlite3
