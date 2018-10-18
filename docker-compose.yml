@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  example:
+    build:
+      context: ./
+      dockerfile: ./django.dockerfile
+    volumes:
+    - example-sync:/home/junk-t/app/:nocopy # nocopy is important
+    tty: true
+    ports:
+      - "8000:8000"
+volumes:
+  example-sync:
+    external: true
