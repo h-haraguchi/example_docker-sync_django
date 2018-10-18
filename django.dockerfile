@@ -11,4 +11,4 @@ USER junk-t
 WORKDIR /home/junk-t
 
 # Start web application after db server has started
-CMD ./app/start-django.sh
+CMD cd app && ./start-django.sh

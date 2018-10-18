@@ -7,5 +7,7 @@ syncs:
   example-sync:
     notify_terminal: true
     src: './'
+    sync_excludes: ['.git', '.idea', '.docker-sync']
+    sync_excludes_type: 'Name'
     sync_userid: '1000'
     sync_strategy: 'unison'
